@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+      <div class="row">
+
+        <div class="col-md-3">
+          <h3>Categories:</h3>
+          <form id="form-category">
+          <div class="category">
+            <input id='new-category' type="text" placeholder="New Category">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-sm">Add</button>
+          </form>
+        </div>
+
+        <div class="col-md-3">
+          <h3>Category List</h3>
+          <table id="category-table" class="table table-condensed table-hover">
+            <tbody>
+              <tr>
+                <th>Category</th>
+                <th>Category Total</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-3">
+          <h3>Add Purchase:</h3>
+          <form id="form">
+          <div class="purchase">
+            <input id='description'type="text" placeholder="Item">
+
+          </div>
+          <br>
+          <div class="amount">
+            <input id='amount' type="text" placeholder="Price">
+          </div>
+          <br>
+          <div class="quantity">
+            <input id='quantity' type="text" placeholder="Quantity">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-sm">Track!</button>
+
+          </form>
+        </div>
+
+
+
+        <div class="col-md-3">
+          <h3>Purchases:</h3>
+          <table id="result-table" class="table table-condensed table-hover">
+            <tbody>
+              <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total Cost</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
